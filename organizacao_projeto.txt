@@ -1,0 +1,29 @@
+INPUTS:
+nome do solicitante
+departamento
+título
+descrição
+prioridade
+
+CARACTERÍSTICAS DE UM CHAMADO:
+Recebem prioridade: Baixa, Média, Alta
+Precisam possuir automaticamente: ID e Status
+Um novo chamado sempre começa com Status em Aberto
+Possíveis status: Aberto -> Em andamento -> Resolvido
+
+*Nota:
+Depois de cadastrado, o sistema deve permitir consultar todos os chamados, procurar um chamado pelo ID, filtrar chamados por status, alterar o status de um chamado e visualizar algumas estatísticas.
+Estatísticas que devem ser mostradas: Total de chamados, Chamados abertos, Chamados em andamento, Chamados resolvidos e Quantidade pro prioridade.
+
+REGRAS DE NEGÓCIO:
+Não pode existir chamado sem solicitante, título ou descrição.
+A prioridade precisa ser válida.
+Cada chamado deve possuir um ID único.
+Ao pesquisar um ID inexistente, o programa não pode quebrar.
+Entradas inválidas no menu também não podem encerrar o programa.
+
+POSSÍVEL ORGANIZAÇÃO DO PROJETO:
+app/: Contendo o main.py;
+services/: Contendo as funções/classes do programa;
+ui/: Contendo o menu inicial;
+utils/: Contendo funções extras para melhor experiência.
